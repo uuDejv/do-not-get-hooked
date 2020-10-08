@@ -1,0 +1,35 @@
+{
+  "name": "do-not-get-hooked",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "deploy": "firebase deploy"
+  },
+  "author": "David Vlasák",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "@react-firebase/database": "^0.3.11",
+    "emotion": "^10.0.27",
+    "firebase": "^7.23.0",
+    "prop-types": "^15.7.2",
+    "react": ">=16.3.0",
+    "react-dom": "^16.13.1",
+    "react-firebase-hooks": "^2.2.0",
+    "react-router-dom": "^5.2.0",
+    "recharts": "^1.8.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.3",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "parcel-bundler": "^1.12.4"
+  }
+}
