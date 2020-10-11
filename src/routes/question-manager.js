@@ -14,7 +14,7 @@ function QuestionManager({ questionId }) {
       if (snapshot.val() !== questionList) setQuestionList(snapshot.val());
     });
     return () => db.off();
-  });
+  }, [questionId]);
 
   function renderQuestionItem(question, key) {
     return (

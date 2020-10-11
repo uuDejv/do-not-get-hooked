@@ -1,17 +1,6 @@
 import * as firebase from "firebase";
 import "firebase/database";
-
-// TODO: Initialize with ur own firebase config
-const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  databaseURL: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: "",
-  measurementId: "",
-};
+import { firebaseConfig } from "./firebasekey";
 
 firebase.initializeApp(firebaseConfig);
 

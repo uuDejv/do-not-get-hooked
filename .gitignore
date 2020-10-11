@@ -1,7 +1,7 @@
-**/node_modules/**
-**/dist/**
-**/.cache/**
+node_modules
+dist
+.cache
 yarn.lock
-*.cache
-*.firebase
-*.firebasekey
+.cache
+.firebase
+firebasekey.js

@@ -16,13 +16,13 @@ function ActiveQuestion({ questionId }) {
       if (snapshot.val() !== question) setQuestion(snapshot.val());
     });
     return () => db.off();
-  });
+  }, [questionId]);
 
   function handleClick(value) {
-    // if (localStorage.getItem(questionId)) {
-    //   alert("You have already answered this question");
-    //   return null;
-    // }
+    if (localStorage.getItem(questionId)) {
+      alert("You have already answered this question");
+      return null;
+    }
     localStorage.setItem(questionId, true);
     firebase
       .ref(`/questions/${questionId}/answers`)
